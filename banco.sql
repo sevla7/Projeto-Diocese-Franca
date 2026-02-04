@@ -68,7 +68,9 @@ INSERT INTO categoria (nome_categoria) VALUES
 ('Horários/Dados'),
 ('Inconsistência de Localização'),
 ('Informativo'), 
-('Navegabilidade (Bug)');
+('Navegabilidade (Bug)'),
+('Sugestão de Melhoria'),
+('Dúvida Geral/Administrativa');    
 
 -- Tabela Desenvolvedor
 INSERT INTO desenvolvedor (nome, email) VALUES 
