@@ -10,7 +10,8 @@ CREATE TABLE FIEL (
     ID_Fiel INT PRIMARY KEY AUTO_INCREMENT,
     Nome VARCHAR(150) NOT NULL,
     Email VARCHAR(150) NOT NULL UNIQUE,
-    Paroquia VARCHAR(100)
+    Paroquia VARCHAR(100),
+    Senha text NOT NULL UNIQUE 
 );
 
 -- Tabela: DESENVOLVEDOR
@@ -18,8 +19,7 @@ CREATE TABLE FIEL (
 CREATE TABLE DESENVOLVEDOR (
     ID_Dev INT PRIMARY KEY AUTO_INCREMENT,
     Nome VARCHAR(150) NOT NULL,
-    Email VARCHAR(150) NOT NULL UNIQUE,
-    Nivel_Especialidade VARCHAR(50) -- Ex: 'N1', 'N2', 'Desenvolvedor Backend'
+    Email VARCHAR(150) NOT NULL UNIQUE,   
 );
 
 -- Tabela: CHAMADO
@@ -47,12 +47,30 @@ CREATE TABLE CHAMADO (
 -- Armazena o histórico de interações de um chamado.
 CREATE TABLE ATUALIZACAO (
     ID_Atualizacao INT PRIMARY KEY AUTO_INCREMENT,
-    Descricao_Atualizacao TEXT NOT NULL,
-    Data_Hora DATETIME NOT NULL,
-    Autor VARCHAR(150) NOT NULL, -- Nome de quem escreveu a atualização
+    id_chamado_fk INT NOT NULL,
+    devolutiva VARCHAR(150) 
      
     -- Chave Estrangeira para relacionar com o chamado
-    ID_Chamado_FK INT NOT NULL,
 
-    FOREIGN KEY (ID_Chamado_FK) REFERENCES CHAMADO(ID_Chamado)
+    FOREIGN KEY (id_chamado_fk) REFERENCES CHAMADO(ID_Chamado)
 );
+
+
+
+-- DATA MANIPULATION LANGUAGE:
+-- Tabela Categoria
+INSERT INTO categoria (nome_categoria) VALUES 
+('Horários/Dados'),
+('Inconsistência de Localização'),
+('Informativo'), 
+('Navegabilidade (Bug)');
+
+-- Tabela Desenvolvedor
+INSERT INTO desenvolvedor (nome, email) VALUES 
+('João Pedro', 'jpobrabo@gmail.com'),
+('Guilherme Botelho', 'guilhermebotelho@hotmal.com'),
+('Miguel Pardini', 'miguelpardini@yahoo.com'),
+('Pedro Luis', 'pedrokodder@outlook.com'),
+('Davi Cunha', 'davicunha@proton.me'),
+('André Luis', 'guilhermebotelho@tutanota.com');
+
