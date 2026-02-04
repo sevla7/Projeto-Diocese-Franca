@@ -3,74 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Chamados</title>
-    <link rel="stylesheet" href="stylr.css"> 
+    <title>Minha Conta | Diocese de Franca</title>
     
-    <style>
-        /* Estilos adicionais para a lista de chamados, se necessário */
-        .chamado-item {
-            border-bottom: 1px solid #ccc;
-            padding: 15px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 1.1em;
-        }
-        .chamado-item:last-child {
-            border-bottom: none;
-        }
-        .status-pendente {
-            color: orange;
-            font-weight: bold;
-        }
-        .status-andamento {
-            color: #1272c1; /* Azul do header */
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="/main/css/style.css"><link rel="stylesheet" href="dashboard.css"> 
+    
+    <script src="js/dashboard.js" defer></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="main.html">Início</a>
-            <a href="missas.html">Missas</a>
-            <a href="sobre.html">Sobre Nós</a>
-            <a href="contato.html">Contato</a>
-        </nav>
-    </header>
-    
-    <section id="meus-chamados" class="contact">
-        <h1 style="font-size: 35px; color: #267abf; margin-bottom: 20px;">Meus Chamados de Suporte</h1>
-        <p>Acompanhe o status das suas solicitações de suporte e dúvidas enviadas à Diocese.</p>
+
+    <nav class="main-nav">
+        <a href="/main/diocese/main.html">Início</a>
+        <a href="/main/diocese/missas.html">Missas</a>
+        <a href="/main/diocese/sobre.html">Sobre Nós</a>
+        <a href="/main/diocese/contato.html">Contato</a>
+        <a href="/main/diocese/MinhaConta.html" class="active">Minha Conta</a>
+    </nav>
+
+    <div class="dashboard-container">
         
-        <div class="chamado-list-container">
-            
-            <div class="chamado-item">
-                <span class="chamado-title">Horário da Missa de Sábado está errado.</span>
-                <span class="chamado-data">25/10/2025</span>
-                <span class="status-pendente">Pendente</span>
+        <aside class="sidebar">
+            <div class="user-profile">
+                <div class="avatar-circle" id="avatar-iniciais">--</div>
+                
+                <h3 id="nome-sidebar">Carregando...</h3>
+                
+                <p>Fiel Dizimista</p>
             </div>
             
-            <div class="chamado-item">
-                <span class="chamado-title">Dúvida sobre o Padre responsável pela Crisma.</span>
-                <span class="chamado-data">20/10/2025</span>
-                <span class="status-andamento">Em Andamento</span>
-            </div>
+            <ul class="menu-list">
+                <li class="active"><a href="#resumo"><i class="fas fa-home"></i> Resumo</a></li>
+                <li><a href="#dados"><i class="fas fa-user-edit"></i> Meus Dados</a></li>
+                <li><a href="#dizimo"><i class="fas fa-hand-holding-heart"></i> Dízimo Online</a></li>
+                <li><a href="#paroquias"><i class="fas fa-church"></i> Paróquias Favoritas</a></li>
+                <li><a href="#chamados"><i class="fas fa-clipboard-list"></i> Meus Chamados</a></li>
+                
+                <li class="logout"><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
             
-            <div class="chamado-item">
-                <span class="chamado-title">O link do Waze para a Paróquia X não funciona.</span>
-                <span class="chamado-data">15/10/2025</span>
-                <span style="color: green; font-weight: bold;">Resolvido</span>
-            </div>
+            <section id="resumo" class="dashboard-section">
+                <h2 id="titulo-boas-vindas">Bem-vindo!</h2>
+                
+                <div class="cards-grid">
+                    <div class="card id-card">
+                        <div class="card-header">
+                            <span>Carteirinha do Fiel</span>
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="card-body">
+                            <h3 id="nome-carteirinha">Nome: ...</h3>
+                            <p>Paróquia: ...</p>
+                            <p>Membro desde: ...</p>
+                            
+                            <div class="qr-placeholder">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                        </div>
+                    </div>
 
-            <p style="padding-top: 20px; font-style: italic;">Clique em "Contato" para abrir um novo chamado.</p>
+                    <div class="card dizimo-status">
+                        <h3>Seu Dízimo em 2026</h3>
+                        <div class="months-grid">
+                            <span class="month" title="Janeiro">JAN</span>
+                            <span class="month" title="Fevereiro">FEV</span>
+                            <span class="month" title="Março">MAR</span>
+                            <span class="month" title="Abril">ABR</span>
+                        </div>
+                        <button class="btn-small">Contribuir Agora</button>
+                    </div>
+                </div>
+            </section>
 
-        </div>
-    </section>
+            <section id="chamados" class="dashboard-section">
+                <h3><i class="fas fa-history"></i> Histórico de Chamados</h3>
+                <div class="table-responsive">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Protocolo</th>
+                                <th>Assunto</th>
+                                <th>Data</th>
+                                <th>Status</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="5" style="text-align: center;">Carregando chamados...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-    <footer>
-        <p style="text-decoration: underline;">&copy; 2025 Diocese de Franca - Todos os direitos reservados</p>
-    </footer>
+            <section id="paroquias" class="dashboard-section">
+                <h3><i class="fas fa-heart"></i> Minhas Paróquias</h3>
+                <div class="favorites-grid">
+                    <div class="fav-card">
+                        <div style="height: 120px; background: #ddd; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-church" style="font-size: 40px; color: #999;"></i>
+                        </div>
+                        <div class="fav-info">
+                            <h4>Sé Catedral</h4>
+                            <p>Próxima Missa: Hoje, 19h</p>
+                            <div class="actions">
+                                <button class="btn-outline">Ver Horários</button>
+                                <button class="btn-danger"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fav-card add-new">
+                        <i class="fas fa-plus-circle"></i>
+                        <p>Adicionar Paróquia</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="dados" class="dashboard-section">
+                <h3>Meus Dados</h3>
+                <form class="form-grid">
+                    <div class="input-group">
+                        <label>Nome Completo</label>
+                        <input type="text" id="input-nome" disabled>
+                    </div>
+                    <div class="input-group">
+                        <label>E-mail</label>
+                        <input type="email" id="input-email" disabled>
+                    </div>
+                    <div class="input-group">
+                        <label>Telefone / WhatsApp</label>
+                        <input type="tel" id="input-tel">
+                    </div>
+                    <div class="input-group">
+                        <label>Data de Nascimento</label>
+                        <input type="date" value="1990-05-20">
+                    </div>
+                    <button type="submit" class="btn-primary">Salvar Alterações</button>
+                </form>
+            </section>
+            <button type="submit" id="carregarDados">Carregar Dados</button>
+        </main>
+    </div>
 
 </body>
 </html>
