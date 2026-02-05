@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diocese de Franca | Início</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        /* Hero Section - Banner Full Width */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #052c4d 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            width: 100%;
+            /* Remove margens padrão para encostar no menu */
+            margin-top: -20px; 
+            margin-bottom: 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-title {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Botão de Ação (CTA) */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color); /* Dourado */
+            color: white; /* Texto branco para contraste */
+            font-weight: bold;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px; /* Botão arredondado é mais amigável */
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(247, 168, 26, 0.4); /* Brilho dourado */
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(247, 168, 26, 0.6);
+            background-color: #e59400;
+        }
+
+        /* Grid de Destaques */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        /* Ajustes finos nos cards da home */
+        .features-grid article {
+            text-align: center;
+            padding: 30px;
+            transition: transform 0.3s ease;
+            margin-bottom: 0; /* O grid cuida do espaçamento */
+            height: 100%; /* Garante altura igual */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .features-grid article:hover {
+            transform: translateY(-5px);
+        }
+
+        .features-grid h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .features-grid p {
+            color: #666; /* Cinza escuro para leitura */
+            font-size: 0.95rem;
+        }
+
+        .icon-display {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Título da seção */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        
+        /* Pequeno detalhe decorativo abaixo do título */
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--accent-color);
+            margin: 10px auto 0;
+        }
+
+    </style>
+</head>
+<body>
+        <nav>
+            <a href="main.html">Início</a>
+            <a href="missas.html">Missas</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="MinhaConta.html">Minha Conta</a>
+        </nav>
+    <header>
+        <h1 style="font-size: 1.5rem; margin-bottom: 10px;">Diocese de Franca</h1>    
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Encontre Paz e Comunhão</h1>
+            <p class="hero-subtitle">A fonte oficial e centralizada para todos os horários de missas em Franca e região.</p>
+            
+            <a href="missas.html" class="cta-button">
+                Ver Horários de Missas
+            </a>
+        </div>
+    </div>
+
+    <section>
+        <h2 class="section-title">Por que usar nosso sistema?</h2>
+        
+        <div class="features-grid">
+            <article>
+                <span class="icon-display">📍</span>
+                <h3>Informação Centralizada</h3>
+                <p>Chega de buscar em múltiplos locais. Encontre todos os horários, de todas as paróquias, em uma única página organizada.</p>
+            </article>
+
+            <article>
+                <span class="icon-display">📱</span>
+                <h3>Acesso Simples</h3>
+                <p>Site otimizado para celulares e computadores, garantindo que você encontre o que precisa em poucos segundos.</p>
+            </article>
+
+            <article>
+                <span class="icon-display">✝️</span>
+                <h3>Comunidade Unida</h3>
+                <p>Facilitamos a participação nas celebrações para promover a união e o fortalecimento da comunidade católica.</p>
+            </article>
+             <article>
+                <span class="icon-display">⚙️</span>
+                <h3>Suporte</h3>
+                <p>Tiramos todas as dúvidas e quetões de horários e locais de missa da comunidade católica.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Diocese de Franca - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
