@@ -6,8 +6,12 @@
     }
 
     body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
         background-color: #333;
         color: #333;
+        margin: 0;
     }
 
     header {
@@ -128,3 +132,44 @@
     textarea {
         resize: none;
     }
+
+    fieldset {
+        border: none;
+        padding: 0 0 10px 0;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    select {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0 ;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* ==================================== */
+/* Estilos Removidos do HTML (Inline)   */
+/* ==================================== */
+
+/* Estilos para o Título (H1) */
+#minha-conta h1 {
+    font-size: 35px;
+    color: #267abf;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o Parágrafo de Descrição */
+#minha-conta .account-description {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos para o Footer */
+footer p {
+    text-decoration: underline; /* Estilo que estava no HTML */
+}

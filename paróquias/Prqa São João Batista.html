@@ -1,57 +1,134 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paróquia São João Batista</title>
-  <link rel="stylesheet" href="style paroquias.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paróquia São João Batista | Ituverava</title>
+    <link rel="stylesheet" href="/paróquias/style paroquias.css">
+    <link rel="shortcut icon" href="/img/diocese logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <a href="/main.html">Início</a>
-        <a href="/missas.html">Missas</a>
-        <a href="/sobre.html">Sobre Nós</a>
-        <a href="/contato.html">Contato</a>
+        <nav>
+            <a href="/main/diocese/main.html">Início</a>
+            <a href="/main/diocese/missas.html">Missas</a>
+            <a href="/main/diocese/sobre.html">Sobre Nós</a>
+            <a href="/main/diocese/contato.html">Contato</a>
+            <a href="/main/diocese/MinhaConta.html">Minha Conta</a>
         </nav>
-    <header>    
-        <h1>Paróquia São João Batista</h1>
-    </header>
-    <article>
-        <img class="logo_paroquia" src="/paróquias/Paróquia Ituverava/Paróquia São João batista logo.jpg" alt="logo Paróquia"> 
-        <h4>Informações da Paróquia</h4>
-        <p>Cidade: Ituverava-SP</p>
-        <p>Data de Criação: 24/06/2011</p>
-        <p>Expediente da secretaria: 
-            <br> Terça a sexta-feira: 11:15h - 17h30 <br>
-            Sábado: 8h - 12h</p>
-        <p>Local da secretária: Igreja Matriz</p>
-        <p>Local da secretária: Igreja Matriz</p>  
-        <p>Endereço:  Rua São Paulo, 1496, Centro, 14.600-000</p>
-        <p>Redes Sociais: 
-            <br> <a href="https://www.instagram.com/psao.joaobatista" target="_blank"><img src="/Logo Aplicativos/Instagram Logo.jpg" alt="Logo Instagram"></a>
-        </p> 
-         
-    </article>
-     <article>
-        <img class="logo_paroquia" src="/paróquias/Paróquia Ituverava/igreja matriz - ituverava.jpeg" alt="Foto da Igreja Matriz"> 
-        <h4>Igreja Matriz
-        </h4>
-        <p>Endereço:  Rua São Paulo, 1496, Centro, 14.600-000</p> <a href="https://maps.app.goo.gl/FuhqnwYjzRM5xV39A" target="_blank"><img src="/Logo Aplicativos/logo maps.webp" alt="Logo Google Maps"></a> <a href="https://encurtador.com.br/rujZw" target="_blank"><img src="/Logo Aplicativos/waze logo.png" alt="Waze"></a>
-        <p>Paróco: Pe. Adailson Ferreira de Oliveira</p>
-        <p>Padres: </p>
-        <p>Missas: 
-            <br> Terça-feira: 7h<br>
-            Quinta-feira: 19h30 <br>
-            Sábado: 19h00 <br>
-            Domingo: 9h30 e 19h
-        </p>
-    </article>
+        <header class="main-header">
+            <div class="header-content">
+                <h1>Paróquia São João Batista</h1>
+            </div>
+        </header>
 
+    <main class="container">
+        
+        <article class="parish-card">
+            <div class="card-content">
+                <div class="text-info">
+                    <h2><i class="fas fa-info-circle"></i> Informações Gerais</h2>
+                    <p><strong>Criação da Paróquia:</strong> 24/06/2011</p>
+                    <p><strong>Endereço:</strong> Rua Payaguas, 826</p>
+                    
+                    <div class="contact-grid">
+                        <p><i class="fas fa-phone"></i> (16) 99998-4101</p>
+                        <p><i class="fas fa-envelope"></i> paroquiasjbituverava@hotmail.com</p>
+                    </div>
 
+                    <hr class="divider">
+
+                    <h3><i class="fas fa-user"></i> Pároco</h3>
+                    <p>Pe. Adailson Ferreira de Oliveira</p>
+                    <div class="social-links">
+                            <span>Redes Sociais:</span>
+                            <a href="https://www.instagram.com/psao.joaobatista" target="_blank" class="btn-instagram">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    <div class="highlight-box">
+                        <h3><i class="far fa-clock"></i> Expediente da Secretaria</h3>
+                        <ul>
+                            <li><strong>Seg à Sex: </strong> 11h15 - 17h30</li>
+                            <li><strong>Sábado:</strong> 8h às 12h</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="/paróquias/Paróquia Ituverava/Paróquia São João batista logo.jpg" alt="Logo Paróquia São João Batista">
+                </div>
+            </div>
+        </article>
+
+        <article class="parish-card">
+            <div class="card-content">
+                <div class="text-info">
+                    <h2><i class="fas fa-church"></i> Horários da Matriz</h2>
+                    
+                    <div class="schedule-grid">
+                        <div class="schedule-item">
+                            <span class="day">Terça-feira</span>
+                            <span class="time">07h00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="day">Quinta-feira</span>
+                            <span class="time">19h30</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span class="day">Sábado</span>
+                            <span class="time">19h00</span>
+                        </div>
+                        <div class="schedule-item highlight">
+                            <span class="day">Domingo</span>
+                            <span class="time">09h30 e 19h00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="image-container">
+                    <img src="/paróquias/Paróquia Ituverava/igreja matriz - ituverava.jpeg" alt="Fachada Igreja São João Batista">
+                     <div class="map-buttons">
+                            <a href="https://maps.app.goo.gl/FuhqnwYjzRM5xV39A" target="_blank" class="btn-map google"><i class="fab fa-google"></i> Maps</a>
+                            <a href="https://encurtador.com.br/rujZw" target="_blank" class="btn-map waze"><i class="fab fa-waze"></i> Waze</a>
+                        </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="parish-card">
+            <div class="card-content full-width">
+                <div class="text-info">
+                    <h2><i class="fas fa-map-marked-alt"></i> Capelas e Comunidades</h2>
+
+                    <div class="chapels-grid">
+                        <div class="chapel-item">
+                            <h4>Capela Imaculada Conceição</h4>
+                            <p class="loc">Avenida Perimetral</p>
+                            <ul>
+                                <li>Quarta-feira: 19h30</li>
+                                <li>Domingo: 17h00</li>
+                            </ul>
+                        </div>
+
+                        <div class="chapel-item">
+                            <h4>Capela Sagrado Coração de Jesus</h4>
+                            <p class="loc">Rua Nobuo Sakemi</p>
+                            <ul>
+                                <li>Sexta-feira: 19h30</li>
+                                <li>Domingo: 07h30</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
 
     <footer>
-        <p style="text-decoration: underline;">&copy; 2025 Diocese de Franca - Todos os direitos reservados</p>
+        <p>&copy; 2025 Diocese de Franca - Todos os direitos reservados</p>
     </footer>
 
 </body>
-</html>
+</html> 

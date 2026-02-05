@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Fiel</title>
-    <link rel="stylesheet" href="stylr.css"> 
+    <script src="js/script_login.js" defer></script>
+    <link rel="shortcut icon" href="/img/diocese logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/main/css/style.css"> 
 </head>
 <body>
-    <header>
         <nav>
-            <a href="main.html">Início</a>
-            <a href="missas.html">Missas</a>
-            <a href="sobre.html">Sobre Nós</a>
-            <a href="contato.html">Contato</a>
-            <a href="MinhaConta.html">Minha Conta</a>
+            <a href="/main/diocese/main.html">Início</a>
+            <a href="/main/diocese/missas.html">Missas</a>
+            <a href="/main/diocese/sobre.html">Sobre Nós</a>
+            <a href="/main/diocese/contato.html">Contato</a>
+            <a href="/main/diocese/MinhaConta.html">Minha Conta</a>
         </nav>
+    <header>
+        <h1>Login</h1>
     </header>
-    
     <section id="login" class="contact">
         <h1 style="font-size: 35px; color: #267abf; margin-bottom: 20px;">Acesso do Fiel</h1>
         <p>Use seu e-mail e senha para acessar seus chamados pendentes e o histórico.</p>
         
-        <form action="/api/fiel/login" method="POST">
-            <input type="email" placeholder="Seu E-mail" name="email" required>
-            <input type="password" placeholder="Sua Senha" name="senha" required>
+        <form>
+            <input type="email" id="email-login" placeholder="Seu E-mail" name="email" required>
+            <input type="password" id="senha-login" placeholder="Sua Senha" name="senha" required>
                     
             <button type="submit">Entrar</button>
         </form>

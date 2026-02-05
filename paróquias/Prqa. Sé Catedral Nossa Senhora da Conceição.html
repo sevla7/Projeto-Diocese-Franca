@@ -1,62 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paróquia Sé Catedral Nossa Senhora da Conceição</title>
-  <link rel="stylesheet" href="style paroquias.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paróquia Sé Catedral Nossa Senhora da Conceição | Diocese de Franca</title>
+    <link rel="stylesheet" href="/paróquias/style paroquias.css">
+    <link rel="shortcut icon" href="/img/diocese logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <a href="/main.html">Início</a>
-        <a href="/missas.html">Missas</a>
-        <a href="/sobre.html">Sobre Nós</a>
-        <a href="/contato.html">Contato</a>
-        </nav>
-    <header>
-        <h1>Paróquia Sé Catedral Nossa Senhora da Conceição</h1>
+        <nav>
+                <a href="/main/diocese/main.html">Início</a>
+                <a href="/main/diocese/missas.html">Missas</a>
+                <a href="/main/diocese/sobre.html">Sobre Nós</a>
+                <a href="/main/diocese/contato.html">Contato</a>
+                <a href="/main/diocese/MinhaConta.html">Minha Conta</a>
+            </nav>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Paróquia Sé Catedral Nossa Senhora da Conceição</h1>
+        </div>
     </header>
-    <article>
-        <img class="logo_paroquia" src="paroquia são joaquim logo.jpg" alt="logo Paróquia"> 
-        <h4>Informações da Paróquia</h4>
-        <p>Cidade: São Joaquim da Barra-SP</p>
-        <p>Data de Criação: 31/03/1911</p>
-        <p>Expediente da secretaria: 
-            <br> Segunda-feira: 13h - 17h30 <br>
-            Terça a sexta-feira: 8h - 17h30 <br>
-            Sábado: 8h - 11h</p>
-        <p>Local da secretária: Igreja Matriz</p>  
-        <p>Endereço:  Rua São Paulo, 1496, Centro, 14.600-000</p>
-        <p>Redes Sociais: 
-            <br> <a href="https://www.instagram.com/paroquiasaojoaquim.sjb" target="_blank"><img src="/Logo Aplicativos/Instagram Logo.jpg" alt="Logo Instagram"></a>
-        </p> 
-         
-    </article>
-     <article>
-        <img class="logo_paroquia" src="igreja matriz.jpg" alt="Foto Igreja"> 
-        <h4>Igreja Matriz
-        </h4>
-        <p>Endereço:  Rua São Paulo, 1496, Centro, 14.600-000</p> <a href="https://encurtador.com.br/91zjn"><img src="/Logo Aplicativos/logo maps.webp" alt="Logo Google Maps"></a> <a href="https://encurtador.com.br/F7zgh"><img src="/Logo Aplicativos/waze logo.png" alt="Waze"></a>
-        <p>Paróco: Pe. Antônio Marcos de Oliveira</p>
-        <p>Padres: Pe. Adriano e Pe. Rafael</p>
-        <p>Missas: 
-            <br> Terça / Quarta e Sexta-feira: 19h30 <br>
-            Quinta-feira: 6h30 <br>
-            Sábado: 18h30 <br>
-            Domingo: 6h30, 9h30, 18h30
-        </p>
-        <p>Expediente da secretaria: 
-            <br> Segunda-feira: 13h - 17h30 <br>
-            Terça a sexta-feira: 8h - 17h30 <br>
-            Sábado: 8h - 11h</p>
-        <p>Local da secretária: Igreja Matriz</p> 
-    </article>
 
+    <main class="container">
+        
+        <article class="parish-card">
+            <div class="card-content">
+                <div class="text-info">
+                    <h2><i class="fas fa-info-circle"></i> Informações da Paróquia</h2>
+                    <p><strong>Cidade:</strong> Franca-SP</p>
+                    <p><strong>Data de Criação:</strong> 31/03/1911</p>
+                    
+                    <div class="highlight-box">
+                        <h3><i class="far fa-clock"></i> Expediente da Secretaria</h3>
+                        <ul>
+                            <li><strong>Segunda:</strong> 13h às 17h30</li>
+                            <li><strong>Terça a Sexta:</strong> 8h às 17h30</li>
+                            <li><strong>Sábado:</strong> 8h às 11h</li>
+                        </ul>
+                        <p class="small-note"><i class="fas fa-map-marker-alt"></i> Local: Igreja Matriz</p>
+                    </div>
 
+                    <p><strong>Endereço:</strong> Rua São Paulo, 1496, Centro</p>
+                    <p><strong>Telefone: </strong>(16) 99209-7808</p>
+                    
+                    <div class="social-links">
+                        <span>Redes Sociais:</span>
+                        <a href="https://www.instagram.com/paroquiansraaparecida/" target="_blank" class="btn-instagram">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="/paróquias/Paróquia Capelinha/capelinha logo.jpg" alt="Logo Paróquia São Joaquim">
+                </div>
+            </div>
+        </article>
+
+        <article class="parish-card">
+            <div class="card-content reverse-mobile">
+                
+                <div class="image-container">
+                    <img src="/paróquias/Paróquia SJB/igreja matriz - sjb.jpg" alt="Foto Igreja Matriz">
+                    <div class="map-buttons">
+                        <a href="https://encurtador.com.br/91zjn" target="_blank" class="btn-map google"><i class="fab fa-google"></i> Maps</a>
+                        <a href="https://encurtador.com.br/F7zgh" target="_blank" class="btn-map waze"><i class="fab fa-waze"></i> Waze</a>
+                    </div>
+                </div>
+
+                <div class="text-info">
+                    <h2><i class="fas fa-church"></i> Igreja Matriz</h2>
+                    <p><strong>Pároco:</strong> Pe. Antônio Marcos (Padre Marquinhos)</p>
+                    <p><strong>Vigários:</strong> Pe. Adriano e Pe. Rafael</p>
+                    
+                    <div class="schedule-box">
+                        <h3><i class="fas fa-calendar-alt"></i> Horários de Missas</h3>
+                        <ul class="mass-list">
+                            <li><span>Ter / Qua / Sex:</span> <strong>19h30</strong></li>
+                            <li><span>Quinta-feira:</span> <strong>06h30</strong></li>
+                            <li><span>Sábado:</span> <strong>18h30</strong></li>
+                            <li><span>Domingo:</span> <strong>06h30, 09h30, 18h30</strong></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </main>
 
     <footer>
-        <p style="text-decoration: underline;">&copy; 2025 Diocese de Franca - Todos os direitos reservados</p>
+        <p>&copy; 2025 Diocese de Franca - Todos os direitos reservados</p>
     </footer>
 
 </body>
-</html>
+</html>     
