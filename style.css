@@ -49,12 +49,13 @@ header img {
 }
 
 nav {
-    margin-top: 10px;
+    margin-top: 0px;
+    padding: 6px;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
-    background-color : grey;
+    background-color: #444;
 }
 
 nav a {
@@ -87,11 +88,11 @@ section {
 /* Estilo unificado para os "Cards" (Sobre, Agenda, Contato) */
 .about, .schedule, .contact, article {
     background: var(--white);
-    border-radius: 12px; 
+    border-radius: 12px; /* Bordas mais arredondadas */
     padding: 40px;
     margin-bottom: 40px;
     box-shadow: var(--shadow);
-    border-left: 5px solid var(--primary-color); 
+    border-left: 5px solid var(--primary-color); /* Detalhe visual elegante */
 }
 
 h2 {
