@@ -45,11 +45,13 @@ body {
 }
 
 nav {
-    margin-top: 10px;
+    margin-top: 0px;
+    padding: 6px;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #444;
 }
 
 nav a {
