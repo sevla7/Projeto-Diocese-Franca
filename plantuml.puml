@@ -1,0 +1,65 @@
+@startuml
+title Arquitetura do Sistema - Fiel (Spring Boot)
+
+package "Controller" {
+  class FielController {
+    +listaFieis(): ResponseEntity<List<Fiel>>
+    +criarUsuario(f: Fiel): ResponseEntity<Fiel>
+    +editarUsuario(f: Fiel): ResponseEntity<Fiel>
+    +excluirUsuario(id: Integer): ResponseEntity<Void>
+    +login(credenciais: LoginDTO): ResponseEntity<String>
+  }
+}
+
+package "Service" {
+  class FielService {
+    +cadastrar(f: Fiel): Fiel
+    +listarTodos(): List<Fiel>
+    +autenticar(email: String, senha: String): boolean
+  }
+}
+
+package "Repository" {
+  interface IFiel {
+    +save(f: Fiel): Fiel
+    +findAll(): List<Fiel>
+    +findByEmail(email: String): Optional<Fiel>
+    +deleteById(id: Integer): void
+  }
+}
+
+package "Model" {
+  class Fiel {
+    -id_fiel: Integer
+    -nome: String
+    -email: String
+    -paroquia: String
+    -senha: String
+    +getId(): Integer
+    +setId(id: Integer): void
+    +getNome(): String
+    +setNome(nome: String): void
+    +getEmail(): String
+    +setEmail(email: String): void
+    +getParoquia(): String
+    +setParoquia(paroquia: String): void
+    +getSenha(): String
+    +setSenha(senha: String): void
+  }
+}
+
+package "DTO" {
+  class LoginDTO {
+    -email: String
+    -senha: String
+    +getEmail(): String
+    +getSenha(): String
+  }
+}
+
+FielController --> FielService : usa
+FielService --> IFiel : usa
+IFiel --> Fiel : persiste
+FielController --> LoginDTO : recebe
+
+@enduml

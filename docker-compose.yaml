@@ -1,0 +1,57 @@
+services:
+  # O Site da Diocese
+  website:
+    image: nginx:alpine
+    build: ./frontend
+    container_name: diocese_site
+    ports:
+      - "80:80"
+    volumes: 
+     # Mapeia a sua pasta frontend local para a pasta pública do Nginx
+      - ./frontend:/usr/share/nginx/html
+    depends_on:
+      - backend
+    restart: always
+
+
+
+  backend:
+    build: ./backend
+    container_name: api-diocese
+    ports:  
+      - "8000:8080"
+    environment:
+      DATABASE_URL: jdbc:postgresql://localhost:5432/DioceseFranca
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: santos
+    depends_on:
+      - db
+
+
+  # O Banco de Dados que você já configurou
+  db:
+    image: postgres:18
+    container_name: diocese_db
+    environment:
+      POSTGRES_DB: DioceseFranca
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: santos
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # O n8n para as automações (E-mail/Telegram)
+  n8n:
+    image: n8nio/n8n
+    container_name: diocese_n8n
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=localhost
+    volumes:
+      - n8n_data:/home/node/.n8n
+
+volumes:
+  postgres_data:
+  n8n_data:
