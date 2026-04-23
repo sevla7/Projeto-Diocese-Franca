@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Chamados</title>
+    <link rel="stylesheet" href="stylr.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="main.html">Início</a>
+            <a href="missas.html">Missas</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="consulta_chamados.html">Meus Chamados</a>
+        </nav>
+    </header>
+    
+    <section id="consulta-chamados" class="contact">
+        <h1 style="font-size: 35px; color: #267abf; margin-bottom: 20px;">Consultar Meus Chamados</h1>
+        <p style="margin-bottom: 25px;">Para ver o status dos seus chamados pendentes, digite o e-mail que você utilizou ao abrir o chamado de suporte.</p>
+        
+        <form id="form-consulta-email">
+            <input type="email" id="email-consulta" placeholder="Seu e-mail cadastrado" required>
+            
+            <button type="submit">Consultar Chamados</button>
+        </form>
+    </section>
+
+    <footer>
+        <p style="text-decoration: underline;">&copy; 2025 Diocese de Franca - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        // Script simples para simular o redirecionamento com o parâmetro de e-mail na URL
+        document.getElementById('form-consulta-email').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            
+            const email = document.getElementById('email-consulta').value;
+            
+            // Redireciona para a página de visualização, passando o e-mail na URL
+            // No seu ambiente Java, a página 'meus_chamados.html' seria um template JSP/Thymeleaf 
+            // que usaria este parâmetro 'email' para fazer a busca no Banco de Dados.
+            window.location.href = `fiel_dashbord.html?email=${encodeURIComponent(email)}`;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+/* =========================================
+   1. Variáveis e Reset (Fácil manutenção)
+   ========================================= */
+:root {
+    --primary-color: #08477a;  /* Azul do Header */
+    --accent-color: #f7a81a;   /* Laranja do Footer/Detalhes */
+    --text-color: #333333;
+    --bg-color: #f4f6f8;       /* Fundo geral suave */
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra padrão */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-color); /* Mudança para cor clara */
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* =========================================
+   2. Cabeçalho e Navegação
+   ========================================= */
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 20px;
+    /* Flexbox para alinhar logo e texto se houver ambos */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Se você tiver uma logo, ela se ajusta aqui */
+header img {
+    width: 70px;
+    height: auto; /* Mantém proporção */
+    object-fit: contain;
+}
+
+nav {
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color : grey;
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all 0.3s ease; /* Suaviza a animação */
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+/* Melhora: Em vez de aumentar a fonte, colocamos uma borda ou mudamos a opacidade */
+nav a:hover {
+    color: var(--white);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+/* =========================================
+   3. Conteúdo Principal e Cards
+   ========================================= */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1; /* Faz o conteúdo empurrar o footer para baixo */
+}
+
+/* Estilo unificado para os "Cards" (Sobre, Agenda, Contato) */
+.about, .schedule, .contact, article {
+    background: var(--white);
+    border-radius: 12px; 
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--primary-color); 
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   4. Links e Listas (Correção do Bug)
+   ========================================= */
+/* Links gerais dentro do conteúdo */
+.schedule ul, .about ul {
+    list-style-position: inside;
+}
+
+.schedule li, .about li {
+    margin-bottom: 10px;
+}
+
+/* Correção: Links dentro dos cards devem ser escuros, não brancos */
+.schedule li a, article a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.schedule li a:hover {
+    text-decoration: underline;
+    color: #1a252f;
+}
+
+/* =========================================
+   5. Formulários (UX aprimorada)
+   ========================================= */
+.contact form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.contact form input,
+.contact form textarea,
+.contact form select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+/* Efeito de foco para o usuário saber onde está digitando */
+.contact form input:focus,
+.contact form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: #fff;
+}
+
+.contact form button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 14px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: 100%; /* Botão full width no mobile fica melhor */
+}
+
+.contact form button:hover {
+    background-color: #06365f; /* Um tom mais escuro do azul */
+    transform: translateY(-1px); /* Leve efeito de clique */
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar só na altura */
+    min-height: 120px;
+}
+
+/* =========================================
+   6. Rodapé
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--accent-color); /* Laranja */
+    color: var(--white);
+    margin-top: auto; /* Garante que fique no fundo */
+}
+
+footer p {
+    font-size: 20px;
+}
+
+/* =========================================
+   7. Responsividade (Mobile)
+   ========================================= */
+@media (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
+
+    .about, .schedule, .contact {
+        padding: 25px;
+    }
+}

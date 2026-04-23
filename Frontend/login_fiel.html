@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Fiel</title>
+    <link rel="stylesheet" href="stylr.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="main.html">Início</a>
+            <a href="missas.html">Missas</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="MinhaConta.html">Minha Conta</a>
+        </nav>
+    </header>
+    
+    <section id="login" class="contact">
+        <h1 style="font-size: 35px; color: #267abf; margin-bottom: 20px;">Acesso do Fiel</h1>
+        <p>Use seu e-mail e senha para acessar seus chamados pendentes e o histórico.</p>
+        
+        <form action="/api/fiel/login" method="POST">
+            <input type="email" placeholder="Seu E-mail" name="email" required>
+            <input type="password" placeholder="Sua Senha" name="senha" required>
+                    
+            <button type="submit">Entrar</button>
+        </form>
+        
+        <p style="padding-top: 20px;">
+            <a href="cadastro_fiel.html" style="color: #267abf; text-decoration: underline;">Ainda não tem cadastro? Crie uma conta.</a>
+        </p>
+    </section>
+
+    <footer>
+        <p style="text-decoration: underline;">&copy; 2025 Diocese de Franca - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>     

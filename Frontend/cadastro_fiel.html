@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script_fiel.js" defer></script>
+    <title>Cadastro Fiel</title>
+    <link rel="stylesheet" href="stylr.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="main.html">Início</a>
+            <a href="missas.html">Missas</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="contato.html">Contato</a>
+            <a href="MinhaConta.html">Minha Conta</a> 
+        </nav>
+    </header>
+    
+    <section id="cadastro" class="contact">
+        <h1 style="font-size: 35px; color: #267abf; margin-bottom: 20px;">Cadastro de Fiel</h1>
+        <p>Preencha os dados para criar sua conta e acompanhar seus chamados.</p>
+        <form>
+            <input type="text" id="nome" placeholder="Seu Nome Completo" name="nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" name="email" required>
+            <input type="text" id="paroquia" placeholder="Sua Paróquia (Opcional)" name="paroquia">
+            <input type="password" id="senha" placeholder="Crie uma Senha" name="senha" required>
+            <input type="password" placeholder="Confirme a Senha" required>
+                    
+            <button type="submit">Cadastrar</button>
+        </form>
+        
+        <p style="padding-top: 20px;">Já tem cadastro? <a href="login_fiel.html" style="color: #267abf; text-decoration: underline;">Faça Login aqui.</a></p>
+    </section>
+
+    <footer>
+        <p style="text-decoration: underline;">&copy; 2025 Diocese de Franca - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+</html>
