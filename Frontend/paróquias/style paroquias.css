@@ -1,0 +1,231 @@
+/* =========================================
+   1. Configurações Globais (Variáveis)
+   ========================================= */
+:root {
+    --primary-color: #08477a;   /* Azul Diocese */
+    --accent-color: #f7a81a;    /* Dourado */
+    --bg-color: #f4f6f8;        /* Cinza bem claro para fundo */
+    --card-bg: #ffffff;         /* Branco para os cards */
+    --text-color: #333333;      /* Texto escuro */
+    --text-light: #666666;      /* Texto secundário */
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra suave */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Lato', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* =========================================
+   2. Cabeçalho
+   ========================================= */
+.main-header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.main-header h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 400; /* Mais elegante */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color : black;
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Efeito de sublinhado animado */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s;
+}
+nav a:hover::after {
+    width: 100%;
+}
+
+/* =========================================
+   3. Conteúdo Principal (Cards)
+   ========================================= */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+/* Estilo do Cartão (Article) */
+.parish-card {
+    background: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    margin-bottom: 40px;
+    overflow: hidden; /* Para a borda redonda funcionar com imagens */
+    border-left: 5px solid var(--accent-color); /* Detalhe dourado lateral */
+}
+
+.card-content {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    align-items: flex-start; /* Alinha no topo */
+}
+
+/* Coluna de Texto */
+.text-info {
+    flex: 1; /* Ocupa o espaço disponível */
+}
+
+.text-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.text-info p {
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+
+.text-info strong {
+    color: var(--text-color);
+}
+
+/* Coluna de Imagem */
+.image-container {
+    flex: 0 0 350px; /* Largura fixa para imagem */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Corta a imagem sem esticar */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Caixas de Destaque (Horários e Secretaria) */
+.highlight-box, .schedule-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border: 1px solid #e1e1e1;
+}
+
+.highlight-box h3, .schedule-box h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.highlight-box ul, .mass-list {
+    list-style: none;
+}
+
+.highlight-box li, .mass-list li {
+    margin-bottom: 8px;
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Botões (Instagram, Maps) */
+.social-links { margin-top: 20px; display: flex; align-items: center; gap: 10px; }
+
+.btn-instagram, .btn-map {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn-instagram { background: #E1306C; color: white; }
+.btn-map.google { background: #4285F4; color: white; }
+.btn-map.waze { background: #33CCFF; color: white; }
+
+.btn-instagram:hover, .btn-map:hover { transform: translateY(-2px); opacity: 0.9; }
+
+.map-buttons { display: flex; gap: 10px; justify-content: center; }
+
+/* =========================================
+   4. Rodapé
+   ========================================= */
+footer {
+    background: var(--accent-color);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+}
+
+/* =========================================
+   5. Responsividade (Mobile)
+   ========================================= */
+@media (max-width: 768px) {
+    .card-content {
+        flex-direction: column; /* Empilha texto e imagem */
+        padding: 20px;
+    }
+
+    .image-container {
+        flex: auto;
+        width: 100%; /* Imagem ocupa largura total */
+    }
+
+    .image-container img {
+        height: auto;
+        max-height: 250px;
+    }
+    
+    /* Na seção da igreja matriz, queremos que a foto apareça antes do texto no celular?
+       Se sim, usamos column-reverse. Se não, deixe normal. 
+       Aqui deixei normal (texto primeiro). */
+}
