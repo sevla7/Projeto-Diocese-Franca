@@ -12,7 +12,7 @@ import java.util.Optional;
 @Service
 public class FielService {
 
-    private IFiel repository;
+    private final IFiel repository;
 
     public FielService(IFiel repository) {
         this.repository = repository;
