@@ -1,0 +1,24 @@
+1- Dados da empresa:
+Razão social: DIOCESE DE FRANCA
+Nome fantasia: Diocese
+Telefones: 16 3721 2294 / 16 99965-0216
+Ponto de Referência : Em frente à Matriz São Benedito
+E-mail: pascom@diocesefranca.org.br - Pastoral da Comunicação Diocesana -
+PASCOM
+E-mail: curia@diocesefranca.org.br - Cúria Diocesana de Franca - Secretaria
+E-mail: certidoes@diocesefranca.org.br - Arquivo Diocesano – Certidões
+
+2– Infraestrutura: A Diocese de Franca possuí toda infraestrutura necessária para acesso e alteração da landing page.
+
+2.2 Redes de dados:
+Possui internet com boa velocidade no carregamento de dados.
+2.3 - Computadores: Possui computadores com processadores e requisitos compatíveis para a utilização da landing page.
+2.4 - Servidores: A empresa de razão social Eddydata é a responsável por cuidar dos servidores e banco de dados.
+2.5 - Periféricos: A empresa possui impressoras, projetores, computadores para que possam ser utilizados.
+
+3- Licenças: Não será necessário a utilização de licenças pagas no projeto, já que, se trata de fins acadêmicos.
+
+4– Recursos Humanos: A landing page será disponibilizada para todos os fiéis da Igreja Católica de Franca como usuários, cerca de 225 mil pessoas, de acordo com o IBGE.
+Será exigido um nível de alfabetização digital básico mediante a simplificação da landing page.
+
+5 - Configuração mínima: Para acessar o site é necessário ter em um aparelho eletrônico, os requisitos mínimos: um sistema operacional (Windows, Android, IOS), um navegador web (Chrome, Firefox, Safari), uma conexão com a internet e, em alguns casos, suporte para tecnologias específicas do site

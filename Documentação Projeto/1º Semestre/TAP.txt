@@ -1,0 +1,109 @@
+1. Situação Atual
+
+Atualmente, com a análise das respostas obtidas na reunião com o stakeholder foi possível notar que há déficits na comunicação entre a entidade (as igrejas), com seu público (os fiéis frequentadores). O que gera a falta da informação de acesso fácil e prático sobre os horários de missa na DIOCESE de Franca/SP.
+A primeiro momento podemos observar que a falta de um site com que unifique todos os horários de missa de forma simples e fácil acesso se faz essencial nas comunidades católicas.
+Pontos favoráveis, já foi definido com o cliente prazos para a entrega do projeto o que dão tempo suficiente a equipe para o desenvolvimento da lange page, em questão do corpo do projeto a equipe recebeu permissão para ter liberdade criativa para executar da melhor maneira os processos de criação da página web. Vale ressaltar que a dificuldade na comunicação entre nós e o cliente se torna um ponto fraco, principalmente na hora de revisar processos ou apresentar resultados.
+
+2. Justificativa
+O projeto visa na criação de uma landing page com os horários de missa das igrejas católicas da diocese de Franca/SP, assim fazendo com que as informações de todas as igrejas estejam presentes em um único lugar de fácil acesso, para que o fiel consiga rapidamente ficar por dentro da programação diocesana.
+-
+
+3. Proposito do projeto e metas
+O presente projeto tem como propósito central desenvolver uma landing page que reúna, de forma clara, acessível e atualizada, os horários de todas as missas das paróquias da cidade de Franca, pertencentes à Igreja Católica. Atualmente, essas informações estão descentralizadas, dificultando o acesso por parte dos fiéis e visitantes. A iniciativa visa promover a integração das paróquias no ambiente digital, facilitando a experiência dos usuários que buscam participar das celebrações religiosas, além de contribuir com a organização comunitária.
+Além disso, pretende-se criar um sistema de atualização simples e eficiente, permitindo que representantes das paróquias possam solicitar alterações nas informações sempre que necessário, garantindo a confiabilidade e atualidade dos dados disponibilizados. Outro objetivo importante é otimizar a página para mecanismos de busca (SEO), de forma que os fiéis encontrem rapidamente as informações ao realizarem pesquisas na internet.
+Por fim, o projeto também visa realizar uma ampla divulgação da landing page por meio de redes sociais, canais de comunicação das paróquias e mídias locais, buscando atingir o maior número possível de pessoas da comunidade católica francana nos primeiros meses após o lançamento. 
+-
+4. Descrição
+O projeto tem como objetivo a criação de uma landing page para concentrar, organizar e divulgar os horários das missas de todas as paróquias católicas da cidade de Franca. 
+Atualmente, essas informações estão dispersas em diferentes canais, dificultando o acesso por parte dos fiéis. A proposta busca resolver essa lacuna, promovendo maior acessibilidade, organização e alcance digital.
+Foi realizada uma etapa de elicitação de requisitos, com coleta de informações junto a representantes das paróquias e usuários. Os requisitos funcionais definidos envolvem a exibição dos horários por paróquia, busca por localização ou dia da semana, filtros por eventos especiais e um sistema de atualização via formulário de contato. 
+Uma análise SWOT revelou como principais forças a presença consolidada da Igreja e o envolvimento comunitário. Como fraquezas, foram identificadas a ausência de centralização de dados e a baixa digitalização. As ameaças incluem resistência de alguns membros à tecnologia e desafios na atualização contínua das informações.
+Utilizando a abordagem 2W1H, definiu-se que o projeto consiste na criação de uma plataforma digital (What), com o propósito de facilitar o acesso à informação sobre missas (Why), sendo executado por meio do levantamento de dados, desenvolvimento web e estratégia de atualização simples e contínua (How).
+Por fim, foi definido um fluxo de processo simples, com base no modelo BPMN, no qual o representante da paróquia envia uma solicitação de alteração, que é validada e atualizada pelo responsável técnico da página, garantindo que os dados permaneçam confiáveis e acessíveis.
+
+
+
+5. Premissas
+O portal será desenvolvido com foco em usuários com faixa etária média acima de 35–40 anos, presumindo que esse grupo acessará com frequência as informações da diocese. 
+Não há uma equipe de design ou administração dedicada. As decisões de comunicação e supervisão serão conduzidas pela Coordenadora da Pastoral da Comunicação (Isabella) e pelo Padre Diogo.
+Não haverá investimento direto por parte da Diocese no momento. Considera-se que os recursos financeiros para hospedagem, domínio ou outros custos operacionais iniciais virão da equipe de desenvolvimento ou de parcerias externas.
+Será respeitada a identidade visual já existente: brasão nas cores azul, branco e dourado e presume-se que a padronização visual existente (mesmo que não unificada) servirá como base para o novo site.
+O site deve, no mínimo, apresentar: horários de funcionamento da secretaria e das capelas da Diocese.
+  A equipe de desenvolvimento possui liberdade criativa para o design e estrutura do portal, respeitando diretrizes visuais e linguagem apropriada para o público-alvo.
+ O projeto, embora possa futuramente abranger toda a Diocese, terá foco inicial na unidade de Franca. Essa expansão é uma possibilidade futura, não garantida nesta fase. O projeto conta com apoio da Pastoral da Comunicação, garantindo legitimidade e representatividade nas decisões.
+
+
+6. Restrições
+
+As soluções devem ser gratuitas ou de baixo custo (ex: uso de ferramentas open-source, hospedagem gratuita ou patrocinada).
+
+A carga de desenvolvimento recai totalmente sobre a equipe acadêmica.
+Existem limitações no uso de identidade visual inovadora que fuja do padrão institucional.
+O material de padronização visual é de anos anteriores e pode estar desatualizado, o que pode gerar inconsistências na aplicação da identidade visual se não houver validação com os responsáveis.
+O conteúdo e estrutura devem ser pensados para expansão geográfica, mas sem execução nesta fase.
+A agenda dos principais responsáveis (Padre Diogo e Isabella) é limitada, o que pode atrasar validações ou aprovações. Tal questão cria uma necessidade de planejar ciclos de revisão mais flexíveis.
+
+
+7. Stakeholders
+
+As principais partes interessadas no projeto são as lideranças religiosas, como padres e administradores das paróquias, que têm a função de fornecer e validar as informações sobre os horários das missas. Também estão envolvidos os colaboradores técnicos, responsáveis pelo desenvolvimento da landing page, manutenção do sistema e estratégias de divulgação. Os fiéis e a comunidade católica de Franca representam o público-alvo e usuários finais da plataforma, sendo fundamentais para a validação da utilidade do projeto. Além disso, pastorais e parceiros locais, como veículos de comunicação e agentes de pastoral, poderão contribuir com apoio na coleta de dados e na promoção da iniciativa.
+
+8. Riscos
+
+Tecnológicos:
+•    Incompatibilidade com dispositivos móveis: risco de o portal não ter boa usabilidade em celulares se não houver testes adequados. 
+•    Falta de infraestrutura de hospedagem: pode não haver um servidor ou serviço de hospedagem definido até fases tardias do projeto. 
+•    Baixo conhecimento da equipe sobre tecnologias específicas (ex: CMS, responsividade, SEO).
+
+Pessoas:
+•    Falta de equipe técnica especializada: não há uma equipe de TI ou design da Diocese à disposição. 
+•    Sobrecarga da equipe de alunos: podem acumular tarefas acadêmicas e não entregar partes do projeto no prazo. 
+•    Desmotivação por falta de recursos ou reconhecimento. 
+
+Cliente:
+•    Baixa disponibilidade para reuniões ou validações (Padre Diogo e Isabella têm agendas limitadas).
+•    Mudanças frequentes de opinião ou escopo durante o projeto, sem planejamento formal.
+
+Negócio: 
+•    Foco inicial apenas na unidade de Franca, o que pode limitar o impacto institucional do site no início.
+•    Risco de falta de continuidade do projeto após a entrega, caso a Diocese não consiga manter ou atualizar o portal.
+Leis: 
+•    Coleta e exposição de dados de pessoas físicas (ex: nomes de padres, horários de atendimento) sem política de privacidade clara.
+Não conformidade com a LGPD, caso o site tenha formulários ou captação de informações.
+•    Falta de experiência formal em liderança de projetos pode dificultar a gestão de tempo, pessoas e comunicação.
+•    Risco de sobrecarga de decisões centralizadas em uma única pessoa.
+
+Processo:
+•    Falta de processos definidos para validação, feedback e mudanças no escopo.
+•    Documentação incompleta ou feita apenas no final, dificultando controle de qualidade e rastreabilidade.
+Cronograma: 
+•    Dependência de validações com stakeholders indisponíveis, o que pode atrasar entregas.
+•    Datas acadêmicas (provas, TCC, férias) podem afetar o ritmo de produção da equipe.
+
+Orçamento:
+•    Não há recursos financeiros garantidos: tudo depende de soluções gratuitas ou voluntárias.
+•    Riscos de custos imprevistos, como domínio, hospedagem, certificado SSL, plugins premium etc.
+•
+
+
+9. Marcos
+
+Datas:
+•    13/03: Início do projeto
+•    27/03: Decisão do cliente
+•    28/03: 1º reunião e apresentação do projeto para o cliente
+•    15/04: 2ª reunião com elicitação de requisitos
+•    25/04: Entrega da documentação para o docente orientador do projeto
+
+10. Responsabilidades
+
+Gerente: Davi Cunha Rodrigues
+Função: Coordenar a equipe e ser porta voz entre os membros e o docente orientador do projeto.
+Integrante: Guilherme Viana Botelho
+Função: Programador da landing page e projetador 
+Integrante: João Pedro Cheadi Alves
+Função: Programador 
+Integrante: Miguel Alves Pardini
+Função: Criar a documentação dos processos do projeto 
+Integrante: Pedro Luís Ribeiro 
+Função: Criar a documentação de requisitos
