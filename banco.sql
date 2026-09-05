@@ -1,4 +1,6 @@
 -- Armazena os tipos de chamados para organização.
+CREATE DATABASE DioceseFranca;
+
 CREATE TABLE categoria (
     id_categoria INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     nome_categoria VARCHAR(100) NOT NULL UNIQUE
