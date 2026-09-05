@@ -1,7 +1,7 @@
 -- Armazena os tipos de chamados para organização.
 CREATE TABLE categoria (
-    ID_Categoria INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    Nome_Categoria VARCHAR(100) NOT NULL UNIQUE
+    id_categoria INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    nome_categoria VARCHAR(100) NOT NULL UNIQUE
 );
 
 -- Tabela: FIEL
@@ -31,9 +31,9 @@ CREATE TABLE chamado (
     status VARCHAR(50) NOT NULL,
     prioridade VARCHAR(50),
 
-    ID_Fiel_FK INT NOT NULL,
-    ID_Dev_FK INT,
-    ID_Categoria_FK INT NOT NULL,
+    id_fiel_fk INT NOT NULL,
+    id_dev_fk INT,
+    id_categoria_fk INT NOT NULL,
 
     CONSTRAINT fk_fiel
         FOREIGN KEY (id_fiel_fk) REFERENCES fiel(id_fiel),
@@ -42,7 +42,7 @@ CREATE TABLE chamado (
         FOREIGN KEY (id_dev_fk) REFERENCES desenvolvedor(if_Dev),
 
     CONSTRAINT fk_categoria
-        FOREIGN KEY (id_categoria_fk) REFERENCES CATEGORIA(id_categoria)
+        FOREIGN KEY (id_categoria_fk) REFERENCES categoria(id_categoria)
 );
 
 -- Tabela: ATUALIZACAO
