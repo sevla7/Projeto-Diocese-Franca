@@ -10,7 +10,8 @@ CREATE TABLE fiel (
     id_fiel INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     nome VARCHAR(150) NOT NULL,
     email VARCHAR(150) NOT NULL UNIQUE,
-    paroquia VARCHAR(100)
+    paroquia VARCHAR(100),
+    senha TEXT 
 );
 
 -- Tabela: DESENVOLVEDOR
