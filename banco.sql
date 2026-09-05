@@ -52,7 +52,7 @@ CREATE TABLE chamado (
 -- Armazena o histórico de interações de um chamado.
 CREATE TABLE atualizacao (
     id_atualizacao INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    descricao_Atualizacao TEXT NOT NULL,
+    descricao TEXT NOT NULL,
     data_fechamento TIMESTAMP NOT NULL,
     autor VARCHAR(150) NOT NULL,
 
@@ -62,13 +62,13 @@ CREATE TABLE atualizacao (
     id_categoria_fk INT NOT NULL,
 
     CONSTRAINT fk_fiel
-        FOREIGN KEY (id_chamado_fk) REFERENCES chamado(id_fiel)
+        FOREIGN KEY (id_fiel_fk) REFERENCES fiel(id_fiel),
     
     CONSTRAINT fk_dev
-        FOREIGN KEY (id_dev_fk) REFERENCES desenvolvedor(id_dev)
+        FOREIGN KEY (id_dev_fk) REFERENCES desenvolvedor(id_dev),
     
     CONSTRAINT fk_chamado
-        FOREIGN KEY (id_chamado_fk) REFERENCES chamado(id_chamado)
+        FOREIGN KEY (id_chamado_fk) REFERENCES chamado(id_chamado),
     
     CONSTRAINT fk_categoria
         FOREIGN KEY (id_categoria_fk) REFERENCES categoria(id_categoria)
