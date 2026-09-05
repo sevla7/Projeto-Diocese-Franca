@@ -42,7 +42,7 @@ CREATE TABLE chamado (
         FOREIGN KEY (id_fiel_fk) REFERENCES fiel(id_fiel),
 
     CONSTRAINT fk_dev
-        FOREIGN KEY (id_dev_fk) REFERENCES desenvolvedor(if_Dev),
+        FOREIGN KEY (id_dev_fk) REFERENCES desenvolvedor(id_dev),
 
     CONSTRAINT fk_categoria
         FOREIGN KEY (id_categoria_fk) REFERENCES categoria(id_categoria)
